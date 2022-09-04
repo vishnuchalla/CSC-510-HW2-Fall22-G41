@@ -16,7 +16,7 @@ class Sym:
         
     def mid(self,col,most,mode):
         most=-1
-        for k,v in enumerate(self._has):
+        for k,v in self._has.items():
             if v>most:
                 mode,most=k,v
         
@@ -28,7 +28,7 @@ class Sym:
             return p*math.log2(p)
         
         e=0
-        for _,n in enumerate(self._has):
+        for _,n in self._has.items():
             if n>0:
                 e=e-self.fun(n/self.n)  
         
