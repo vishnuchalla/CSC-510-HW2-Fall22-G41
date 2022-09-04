@@ -12,7 +12,7 @@ class Sym:
     def add(self,v):
         if v!="?":
             self.n=self.n+1
-            self._has[v]=1+(self._has[v])
+            self._has[v]=1+self._has.setdefault(v,0)
         
     def mid(self,col,most,mode):
         most=-1
@@ -24,13 +24,13 @@ class Sym:
         
     def div(self,e,fun):
 
-        def fun(self,p):
+        def fun(p):
             return p*math.log2(p)
         
         e=0
         for _,n in self._has.items():
             if n>0:
-                e=e-self.fun(n/self.n)  
+                e=e-fun(n/self.n)  
         
         return e
 
