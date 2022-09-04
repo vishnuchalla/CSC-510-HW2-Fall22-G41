@@ -2,21 +2,21 @@ import pytest
 from code.Sym import Sym
 
 """
-Fixture to setup and teardown operation object for tests.
+Fixture to setup and teardown sym object for tests.
 """
 
 
 @pytest.fixture()
 def sym_test():
-    print("\nSetting up operation object for test")
+    print("\nSetting up sym object for test")
     sym = Sym()
     yield sym
-    print("\nDeleting operation object as a teardown")
+    print("\nDeleting sym object as a teardown")
     del sym
 
 
 """
-Class to test Operation.
+Class to test Sym.
 """
 
 
