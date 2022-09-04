@@ -24,19 +24,19 @@ class TestSym:
     """
     Method to test add method.
     """
-    # def test_add(self, sym_test):
-    #     sym_test.add('Volume')
-    #     assert sym_test.n == 1
-    #     assert sym_test._has['Volume'] == 1
+    def test_add(self, sym_test):
+        sym_test.add('Volume')
+        assert sym_test.n == 1
+        assert sym_test._has['Volume'] == 1
 
     """
     Method to test the mid method -- This tests the most frequent column in _has dictionary
     """
-    # def test_mid(self, sym_test):
-    #     sym_test.add('Volume')
-    #     sym_test.add('Volume')
-    #     sym_test.add('Clndrs')
-    #     assert sym_test.mid(None,None,None) == 'Volume'
+    def test_mid(self, sym_test):
+        sym_test.add('Volume')
+        sym_test.add('Volume')
+        sym_test.add('Clndrs')
+        assert sym_test.mid(None,None,None) == 'Volume'
 
     """
     Method to test the div method
