@@ -1,3 +1,5 @@
+import math
+
 class Sym:
 
     # `Sym`s summarize a stream of symbols.
