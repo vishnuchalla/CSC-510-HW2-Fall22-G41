@@ -50,7 +50,7 @@ class TestSym:
     """
     To test add, mid and div methods
     """
-    def test_sym(self, sym_test, entropy, mode):
+    def test_sym(self, sym_test, entropy=None, mode=None):
         for i in ['a', 'a', 'a', 'a', 'b', 'b', 'c']:
             sym_test.add(i)
         mode, entropy = sym_test.mid(None, None, None), sym_test.div(0, None)
