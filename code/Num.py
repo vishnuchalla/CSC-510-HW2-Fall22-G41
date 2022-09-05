@@ -21,7 +21,7 @@ class Num:
         p=math.floor(((p or 0.5)*len(t))+ 0.5)
         
         return t[max(1,min(len(t),p))]
-    
+
     # Return kept numbers, sorted
     def nums(self):
         if not self.isSorted:
@@ -47,7 +47,7 @@ class Num:
             if pos:
                 self.isSorted=False
                 self._has[pos]= int(v)
-    
+
     # Diversity (standard deviation for Nums, entropy for Syms)
     def div(self,a):
         a=self.nums()
