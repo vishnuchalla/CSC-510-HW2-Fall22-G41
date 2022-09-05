@@ -1,4 +1,6 @@
 import math
+import random
+import collections
 
 class Num:
 
@@ -13,5 +15,11 @@ class Num:
         self.hi= -math.inf  # highest seen
         self.isSorted=True # No updates since last sort of data
         self.w= (s.find('-$')+1 and -1 or 1)
+
+    # Return the `p`-th thing from the sorted list `t`. - Move this to utility function afterwards
+    def per(t,p):
+        p=math.floor(((p or 0.5)*len(t))+ 0.5)
         
-        
+        return t[max(1,min(len(t),p))]
+    
+    
