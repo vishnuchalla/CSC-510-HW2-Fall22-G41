@@ -47,6 +47,19 @@ class TestSym:
         sym_test.add('Clndrs')
         assert sym_test.div(0,None) == pytest.approx(0.91, 0.08)
 
+    """
+    To test add, mid and div methods
+    """
+    def test_sym(self, sym_test):
+        for i in ['a', 'a', 'a', 'a', 'b', 'b', 'c']:
+            sym_test.add(i)
+        mode, entropy = sym_test.mid(None, None, None), sym_test.div(0, None)
+        entropy = ((1000 * entropy) // 1) / 1000
+        assert mode == 'a'
+        assert 1.38 >= entropy >= 1.37
+
+
+
 
 
 
