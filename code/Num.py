@@ -9,9 +9,9 @@ class Num:
         self.at=c
         self.name=s 
         self._has={}
-        self.lo= math.inf   # lowest seen
-        self.hi= -math.inf  # highest seen
+        self.lo=math.inf   # lowest seen
+        self.hi=-math.inf  # highest seen
         self.isSorted=True # No updates since last sort of data
-        self.w= (s.find('-$')+1 and -1 or 1)
+        self.w=(s.find('-$')+1 and -1 or 1)
         
         
