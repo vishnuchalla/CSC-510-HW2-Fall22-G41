@@ -17,13 +17,15 @@ class PrettyPrint:
         u = list()
         if(type(t) is list):
             for each in t:
-                k, v = list(each.items())[0]
-                u.append(":" + k + " " + show(k, v))
+                if(type(each) is str):
+                    u.append(each)
+                else:
+                    k, v = list(each.items())[0]
+                    u.append(":" + k + " " + show(k, v))
         elif(type(t) is dict):
             for k,v in t.items():
                 u.append(show(k, v))
-        if type(t) is str:
-            u.sort()
+        u.sort()
         return "{" + " ".join(u) + "}"
     
     # Method to stringify the given document.
@@ -35,7 +37,7 @@ class PrettyPrint:
 if __name__ == "__main__":
     pp = PrettyPrint()
     json1 = [{"test": "vchalls"}, {"again": "teset"}]
-    json2 = [{"test": {"vchalla": "bond"}}, {"again": "teset"}]
+    json2 = ["james", {"test": {"sholay": "bond"}}, {"again": "crap"}]
     pp.oo(json1)
     pp.oo(json2)
     
