@@ -11,8 +11,8 @@ class Num:
         self.at=c
         self.name=s 
         self._has={}
-        self.lo= math.inf   # lowest seen
-        self.hi= -math.inf  # highest seen
+        self.lo=math.inf   # lowest seen
+        self.hi=-math.inf  # highest seen
         self.isSorted=True # No updates since last sort of data
         self.w= (s.find('-$')+1 and -1 or 1)
 
@@ -27,7 +27,7 @@ class Num:
         if not self.isSorted:
             self._has=collections.OrderedDict(sorted(self._has.items()))
             self.isSorted=True
-        
+    
         return self._has
 
     # Reservoir sampler. Keep at most `the.nums` numbers
