@@ -1,6 +1,3 @@
-import sys
-import os
-sys.path.insert(1, os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
 from code.Sym import Sym
 
 """
