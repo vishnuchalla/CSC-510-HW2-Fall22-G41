@@ -1,12 +1,14 @@
 from subprocess import list2cmdline
 import sys
 import os
+from unittest.result import failfast
 
 sys.path.insert(1, os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
 
 class FrameWork:
     def __init__(self, testMethods):
         self.testMethods = testMethods
+        self.fails = 0
 
     def list(self):
         self.testMethods.sort()
@@ -20,7 +22,8 @@ class FrameWork:
         for eachMethod in self.testMethods:
             className, testMethod = eachMethod.split('.')
             result = eval(eachMethod)
-            msg = "PASSED" if (result) else "FAILED"
+            msg, exit_code = ("PASSED", 0) if (result) else ("FAILED", 1)
+            self.fails += exit_code
             print(className[:-2] + ':' + testMethod[:-2] + " - " + msg)
 
 if __name__ == '__main__':
@@ -34,3 +37,11 @@ if __name__ == '__main__':
         testMethods += [className+'().'+func+'()' for func in dir(eval(className)) if callable(getattr(eval(className), func)) and not func.startswith("__")]
     frameWork = FrameWork(testMethods)
     frameWork.all()
+    print("--------------Summary--------------")
+    totalTests = len(frameWork.testMethods)
+    failures = frameWork.fails
+    print(str(totalTests - failures) + " PASSED ", end="\t\t")
+    print(str(failures) + " FAILED ")
+    print("Success Rate:- " + str(((totalTests - failures)*100)/totalTests) + "%", end="\t\t")
+    print("Failure Rate:- " + str((failures*100)/totalTests) + "%")
+    sys.exit(failures)
