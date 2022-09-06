@@ -1,9 +1,7 @@
-from subprocess import list2cmdline
 import sys
 import os
-from unittest.result import failfast
 
-sys.path.insert(1, os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
+sys.path.insert(0, os.path.abspath(os.getcwd()))
 
 class FrameWork:
     def __init__(self, testMethods):
@@ -27,9 +25,10 @@ class FrameWork:
             print(className[:-2] + ':' + testMethod[:-2] + " - " + msg)
 
 if __name__ == '__main__':
-    testFiles = [filename.split('.')[0] for filename in os.listdir(os.getcwd()) if filename.startswith("test")]
+    testFiles = [filename.split('.')[0] for filename in os.listdir(os.getcwd()+"/test") if filename.startswith("test")]
     testMethods = []
     for eachFile in testFiles:
+        print(eachFile)
         first, second = eachFile.split('_')
         first = first[0].upper() + first[1:]
         className = first + second

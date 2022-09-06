@@ -32,12 +32,4 @@ class PrettyPrint:
     def oo(self, t):
         print(self.o(t))
         return t
-
-# Main method to test the functionality.
-if __name__ == "__main__":
-    pp = PrettyPrint()
-    json1 = [{"test": "vchalls"}, {"again": "teset"}]
-    json2 = ["james", {"test": {"sholay": "bond"}}, {"again": "crap"}]
-    pp.oo(json1)
-    pp.oo(json2)
     

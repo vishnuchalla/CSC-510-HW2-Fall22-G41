@@ -1,7 +1,4 @@
-import sys
-import os
 from typing import OrderedDict
-sys.path.insert(1, os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
 from code.Num import Num
 
 """
