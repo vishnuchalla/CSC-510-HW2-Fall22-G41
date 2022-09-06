@@ -42,7 +42,7 @@ class Num:
                 pos=1+len(self._has)
             
             elif random.uniform(0,1) < the.nums/self.n:
-                pos=random.randrange(len(self._has))
+                pos=random.randrange(1, len(self._has))
             
             if pos:
                 self.isSorted=False
