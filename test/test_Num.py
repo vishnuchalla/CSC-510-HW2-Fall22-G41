@@ -3,7 +3,6 @@ import os
 from typing import OrderedDict
 sys.path.insert(1, os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
 from code.Num import Num
-import inspect
 
 """
 Class to test Num.
@@ -56,3 +55,23 @@ class TestNum(object):
         num._has = {1: 3, 2: 4, 3: 5}
         result = num.mid()
         return result == 4
+    
+    """
+    Method to test the add method for if block.
+    """
+    def test_add_if_block(self):
+        num = Num()
+        num.config = {'nums': 4}
+        num._has = {1: 3, 2: 4, 3: 5}
+        num.add(6, 6)
+        return num._has == {1: 3, 2: 4, 3: 5, 4: 6}
+    
+    """
+    Method to test the add method for elifblock.
+    """
+    def test_add_elifblock(self):
+        num = Num()
+        num.config = {'nums': 2}
+        num._has = {1: 3, 2: 4, 3: 5}
+        num.add(6, 6)
+        return len(num._has) == 3
