@@ -17,7 +17,7 @@ class Num:
         self.w= (s.find('-$')+1 and -1 or 1)
 
     # Return the `p`-th thing from the sorted list `t`. - Move this to utility function afterwards
-    def per(t,p):
+    def per(self, t, p):
         p=math.floor(((p or 0.5)*len(t))+ 0.5)
         
         return t[max(1,min(len(t),p))]
@@ -38,10 +38,10 @@ class Num:
             self.lo=min(v, self.lo)
             self.hi=max(v, self.hi)
 
-            if len(self._has)< the.nums:
+            if len(self._has)< self.config['nums']:
                 pos=1+len(self._has)
             
-            elif random.uniform(0,1) < the.nums/self.n:
+            elif random.uniform(0,1) < self.config['nums']/self.n:
                 pos=random.randrange(1, len(self._has))
             
             if pos:
@@ -52,8 +52,8 @@ class Num:
     def div(self,a):
         a=self.nums()
 
-        return (per(a,0.9)-per(a,0.1))/2.58
+        return (self.per(a,0.9)-self.per(a,0.1))/2.58
 
     # Central tendency (median for Nums, mode for Syms)
     def mid(self): 
-        return per(self.nums(),0.5)
+        return self.per(self.nums(),0.5)

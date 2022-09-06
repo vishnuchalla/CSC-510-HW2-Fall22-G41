@@ -1,11 +1,13 @@
+import sys
+import os
+sys.path.insert(1, os.path.abspath(os.path.join(os.getcwd(), os.pardir)))
 from code.Sym import Sym
 
 """
 Class to test Sym.
 """
 
-
-class TestSym:
+class TestSym(object):
     """
     Method to test add method.
     """
