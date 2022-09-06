@@ -56,12 +56,3 @@ class TestNum(object):
         num._has = {1: 3, 2: 4, 3: 5}
         result = num.mid()
         return result == 4
-
-
-if __name__ == '__main__':
-    testNum = TestNum()
-    testNum.test_per()
-    testNum.test_nums_false_case()
-    testNum.test_nums_true_case()
-    testNum.test_div()
-    testNum.test_mid()
