@@ -20,7 +20,7 @@ class Cols:
             Utils.push(self.all, col)
             # print(self.all)
             if not value.endswith(':'):  # columns ending with ':' are skipped
-                input_dict = self.x if any(value.endswith(i) for i in ['+', '!', '-']) else self.y
+                input_dict = self.y if any(value.endswith(i) for i in ['+', '!', '-']) else self.x
                 Utils.push(input_dict, col)
                 # print('x', self.x, 'y', self.y)
             if value.endswith('!'):
