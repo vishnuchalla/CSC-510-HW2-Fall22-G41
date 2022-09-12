@@ -19,7 +19,7 @@ class TestUtils(object):
     def test_num(self):
         num=Num()
         for i in range(1,101):
-            num.add(i,0)
+            num.add(i)
         mid,div = num.mid(), num.div(a=None)
         print(mid,div)
         return 50<=mid and mid<=52 and 30.5<div and div<32
