@@ -13,7 +13,21 @@ class TestUtils(object):
         self.the = {}
 
     """
-    Method to test big num method.
+    Method to test num method: The middle and diversity of a set of numbers is called "median"
+    and "standard deviation" (and the latter is zero when all the nums are the same).
+    """
+    def test_num(self):
+        num=Num()
+        num.config = {'nums': 100}
+        for i in range(1,101):
+            num.add(i,0)
+        mid,div = num.mid(), num.div(a=None)
+        print(mid,div)
+        return 50<=mid and mid<=52 and 30.5<div and div<32 and 100==len(num._has)
+
+    """
+    Method to test big num method: Nums store only a sample of the numbers added to it (and that storage
+    is done such that the kept numbers span the range of inputs).
     """
     def test_bigNum(self):
         self.the['nums']=32
