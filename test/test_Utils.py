@@ -18,7 +18,7 @@ class TestUtils(object):
     """
     def test_num(self):
         num=Num()
-        num.config = {}
+        num.config = {'nums': 100}
         for i in range(1,101):
             num.add(i,0)
         mid,div = num.mid(), num.div(a=None)
