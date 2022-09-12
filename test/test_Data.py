@@ -12,7 +12,7 @@ class TestData(object):
     def test_readcsv(self):
         n=0
         with open('data/auto93.csv', 'r') as file:
-            my_reader = csv.reader(file)
+            my_reader = csv.reader(file,delimiter=',')
             for row in my_reader:
                 print(row)
                 n+=1
