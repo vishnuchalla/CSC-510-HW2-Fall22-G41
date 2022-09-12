@@ -14,7 +14,6 @@ def csv(self,fname,fun,sep,src,s,t):
                 t = {}
                 for s1 in s.split(','):
                     t[1+len(t)] = coerce(s1)
-                fun(t)
 
 
 def coerce(s,fun):
