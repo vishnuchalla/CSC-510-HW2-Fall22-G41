@@ -1,22 +1,21 @@
 import math
 import random
 import collections
-import ReadFile
+import Csv
 import Col
 import Row
 
 class Data:
-   def __init__(self, src):
-        self.xs=None
+    def __init__(self, src):
         self.cols= None
         self.rows={}
         if type(src) is str:
-            csv(src, self.add(row))
+            Csv.csv(src, self.add(row))
         else:
-            for _,row in len(src):
+            for _,row in enumerate(src):
                 self.add(row)
 
-    def add(self, row):
+    def add(self, xs: Row):
         col = Col()
         if self.cols:
             self.cols = Cols(xs)
@@ -40,7 +39,7 @@ class Data:
 
     def push(t,x):
         t[1+len(t)] = x
-    
+
     def rnd(x, places):
         mult = 10
         if places:
