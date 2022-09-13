@@ -72,3 +72,16 @@ class TestNum(object):
         num._has = {1: 3, 2: 4, 3: 5}
         num.add(6, 6)
         return len(num._has) == 3
+    
+    """
+    Method to test num method: The middle and diversity of a set of numbers is called "median"
+    and "standard deviation" (and the latter is zero when all the nums are the same).
+    """
+    def test_num(self):
+        num=Num()
+        num.config = {'nums': 100}
+        for i in range(1,101):
+            num.add(i,0)
+        mid,div = num.mid(), num.div(a=None)
+        print(mid,div)
+        return 50<=mid and mid<=52 and 30.5<div and div<32 and 100==len(num._has)
