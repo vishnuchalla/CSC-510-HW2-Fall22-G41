@@ -1,5 +1,5 @@
 import math
-from code.Csv import Csv
+import Csv
 import Cols
 from Utils import Row, Utils
 
