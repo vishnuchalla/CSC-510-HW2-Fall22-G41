@@ -1,3 +1,5 @@
+from code.Csv import Csv
+
 """
 Class to test data methods in the package.
 """
