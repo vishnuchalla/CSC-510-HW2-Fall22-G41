@@ -1,23 +1,24 @@
+import csv   
 from code.PrettyPrint import PrettyPrint
-from code.ReadFile import ReadFile
-from code.Row import Row
 
 """
 Class to test data methods in the package.
 """
 class TestData(object):
-
+    
+    """
+    Method to read the csv file
+    """
     def test_readcsv(self):
-        csv_data = ReadFile()
-        prettyPrint = PrettyPrint()
         n=0
-        def row_func(self):
-            row=Row()
-            n+=1
-            if n>10:
-                return
-            else:
-                prettyPrint.oo(row)
-
-        csv = csv_data.csv('data/auto93.csv',row_func)
+        with open('data/auto93.csv', 'r') as file:
+            my_reader = csv.reader(file)
+            for row in my_reader:
+                print(row)
+                n+=1
+                if n > 10:
+                    return
+                else:
+                    prettyPrint = PrettyPrint()
+                    prettyPrint.oo(row)
         return True
