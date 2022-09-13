@@ -5,7 +5,7 @@ from code.PrettyPrint import PrettyPrint
 Class to test utilities in the package.
 """
 
-class TestUtils(object):
+class TestPrettyPrint(object):
     """
     Init Method.
     """
