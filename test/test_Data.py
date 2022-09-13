@@ -9,7 +9,7 @@ class TestData(object):
     Method to load csv file into a Data
     """
     def test_data(self):
-        #d = Data('data/auto93.csv')
+        d = Data('data/auto93.csv')
         for _,col in (d.cols.y.items()):
             prettyPrint = PrettyPrint()
             prettyPrint.oo(col)
