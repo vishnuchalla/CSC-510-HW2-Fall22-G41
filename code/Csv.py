@@ -11,13 +11,15 @@ class Csv:
     def csv(self,fname,fun,sep=None,src=None,s=None,t=None):
         sep = ","
         src = fname
-        #while True:
-        #    with open(src) as f:
-        #        s = f.read()
-        #        if s:
-        #            t = {}
-        #            for s1 in s.split(','):
-        #                t[1+len(t)] = coerce(s1)
+        while True:
+            with open(src) as f:
+                s = f.read()
+                if s:
+                    t = {}
+                    for s1 in s.split(','):
+                        t[1+len(t)] = coerce(s1)
+        
+    def csv(self):
         with open('data/auto93.csv', 'r') as file:
             my_reader = csv.reader(file)
         return my_reader
