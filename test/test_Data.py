@@ -1,5 +1,6 @@
 from code.Csv import Csv
 from code.PrettyPrint import PrettyPrint
+from code.Data import Data
 
 """
 Class to test data methods in the package.
