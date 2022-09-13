@@ -1,6 +1,4 @@
 from code.PrettyPrint import PrettyPrint
-from code.ReadFile import ReadFile
-from code.Row import Row
 from code.Data import Data
 
 """
@@ -22,8 +20,9 @@ class TestData(object):
     Method to print some stats on columns
     """
     def test_stats(self):
-        data = Data('data/auto93.csv')
+        #data = Data('data/auto93.csv')
         
+
         def div(col):
             return col.div()
         
