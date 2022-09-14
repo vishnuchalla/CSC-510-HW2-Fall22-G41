@@ -1,14 +1,14 @@
 import math
-import Csv
-import Cols
-from Utils import Row, Utils
+from .Csv import Csv
+from .Cols import Cols
+from .Utils import Row, Utils
 
 class Data:
     def __init__(self, src):
         self.cols= None
         self.rows={}
         if type(src) is str:
-            Csv.csv(src, self.add(row))
+            Csv.csv(src, 'add')
         else:
             for _,row in enumerate(src):
                 self.add(row)
