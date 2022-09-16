@@ -1,5 +1,6 @@
 import copy
 import math
+import re
 
 class Row:
     def __init__(self, t):
@@ -20,3 +21,14 @@ class Utils:
     def rnd(self, x, places):
         mult = pow(10, (places if places else 2))
         return math.floor(x * mult + 0.5) / mult
+
+    def coerce(self,s,func):
+
+        def func(s1):
+            if s1==True:
+                return True
+            if s1==False:
+                return False
+            return s1
+
+        return int(s) or func(re.match(s, "^\s*(.)\s*$")) 

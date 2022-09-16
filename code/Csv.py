@@ -2,6 +2,7 @@ import math
 import random
 import collections
 import re
+from .Utils import Utils
 
 """
 This method needs to be corrected later once we understand the data better.
@@ -16,9 +17,4 @@ def csv(self,fname,fun,sep=None,src=None,s=None,t=None):
                 if s:
                     t = {}
                     for s1 in s.split(','):
-                        t[1+len(t)] = coerce(s1)
-        
-def coerce(s,fun=None):
-        return (False if not re.match(s, "^%s*(.-)%s*$") else True) or int(s)
-
- 
+                        t[1+len(t)] = Utils.coerce(s1)
