@@ -5,11 +5,16 @@ from .Utils import Utils
 """
 Formatter class for argument parser.
 """
+
+
 class Formatter(argparse.ArgumentDefaultsHelpFormatter, argparse.RawDescriptionHelpFormatter): pass
+
 
 """
 Class Csv to perform operations on a input csv file.
 """
+
+
 class Csv:
     """
     Just a simple argument parser
@@ -30,6 +35,7 @@ class Csv:
     -s SEED, --seed SEED  random number seed (default: 10019)
     -S SEPERATOR, --seperator SEPERATOR feild seperator (default: ,)
     """
+
     def __init__(self):
         parser_object = argparse.ArgumentParser(
             description="""CSV : summarized csv file\n(c) 2022 Tim Menzies <timm@ieee.org> BSD-2 license""",
@@ -45,17 +51,16 @@ class Csv:
         parser.add_argument("-S", "--seperator", default=",", type=str, help="feild seperator")
 
         self.args = parser_object.parse_args()
-        print(self.args)
 
     """
     Method to read and process the csv rows.
     """
+
     def csv(self, fname, fun=None):
-        pass
         sep = self.args.seperator
         with open(fname, newline='') as csvfile:
             reader = csvreader.reader(csvfile, delimiter=sep, quotechar='|')
             for row in reader:
                 for idx in range(len(row)):
                     row[idx] = Utils().coerce(row[idx])
-                fun(row)            
+                fun(row)
