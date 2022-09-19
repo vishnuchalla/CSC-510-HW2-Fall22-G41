@@ -5,7 +5,7 @@ from code.PrettyPrint import PrettyPrint
 Class to test utilities in the package.
 """
 
-class TestUtils(object):
+class TestPrettyPrint(object):
     """
     Init Method.
     """
@@ -13,7 +13,8 @@ class TestUtils(object):
         self.the = {}
 
     """
-    Method to test big num method.
+    Method to test big num method: Nums store only a sample of the numbers added to it (and that storage
+    is done such that the kept numbers span the range of inputs).
     """
     def test_bigNum(self):
         self.the['nums']=32
