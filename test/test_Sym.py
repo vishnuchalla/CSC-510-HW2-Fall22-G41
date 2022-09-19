@@ -42,6 +42,7 @@ class TestSym(object):
             sym.add(i)
         mode, entropy = sym.mid(None, None, None), sym.div(0, None)
         entropy = ((1000 * entropy) // 1) / 1000
+        print(mode,entropy)
         return mode == 'a' and 1.38 >= entropy >= 1.37
 
 
