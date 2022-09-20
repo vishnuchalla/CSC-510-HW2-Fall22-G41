@@ -10,10 +10,13 @@ class TestData(object):
     """
     def test_data(self):
         d = Data('./data/auto93.csv')
-        # Needs to be revisited once the csv is read properly
         for col in d.cols.y.values():
+            obj = {}
+            for key, value in col.__dict__.items():
+                if type(value) in [bool, int, float, str]:
+                    obj[key] = value
             pretty_print = PrettyPrint()
-            pretty_print.oo(col)
+            pretty_print.oo(obj)
 
         return True
 
