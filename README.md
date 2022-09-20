@@ -128,6 +128,17 @@ ydiv	{:Acc+ 2.713 :Lbs- 887.209 :Mpg+ 7.752}
 !!!!!!	PASS	ALL	true
 ```
 
+### QuickStart
+
+<br/> Clone the repository.
+```
+git clone https://github.com/vishnuchalla/CSC-510-HW2-Fall22-G41.git
+```
+<br/> Run the following command to test the test cases.
+```
+crontab -l
+```
+
 
 ### Group 41
 1. Vishnu Challa (vchalla2)
