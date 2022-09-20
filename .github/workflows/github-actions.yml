@@ -16,6 +16,6 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: Generate Report
-          run:|
-            pip install coverage
-            coverage run test/Framework.py
+        run: |
+          pip install coverage
+          coverage run test/Framework.py
