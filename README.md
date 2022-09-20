@@ -3,7 +3,7 @@ Homework 2 Repo for Software Engineering 22 Group 41
 
 [![Build Status](https://app.travis-ci.com/vishnuchalla/CSC-510-HW2-Fall22-G41.svg?branch=main)](https://app.travis-ci.com/vishnuchalla/CSC-510-HW2-Fall22-G41)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7053897.svg)](https://doi.org/10.5281/zenodo.7053897)
-![Code Coverage](https://img.shields.io/badge/Code%20Coverage-83%25-success?style=flat)
+[![Code Coverage](https://codecov.io/github/vishnuchalla/CSC-510-HW2-Fall22-G41/branch/main/graph/badge.svg?token=AJ0WMF1F1J)](https://codecov.io/github/vishnuchalla/CSC-510-HW2-Fall22-G41)
 
 ![alt text](https://github.com/vishnuchalla/CSC-510-HW1-Fall22-G41/blob/main/data/softwareEngg.png?raw=true)
 
