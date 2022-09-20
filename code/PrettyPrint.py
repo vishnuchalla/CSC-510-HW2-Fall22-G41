@@ -13,7 +13,7 @@ class PrettyPrint:
     what all formats are handled.
     """
 
-    def o(self, t):
+    def o(self, t, sort=True):
         if type(t) is not list and type(t) is not dict:
             return str(t)
 
@@ -33,9 +33,11 @@ class PrettyPrint:
         elif type(t) is dict:
             for k, v in t.items():
                 u.append(show(k, v))
+        if(sort):
+            u.sort()
         return "{" + " ".join(u) + "}"
 
     # Method to stringify the given document.
-    def oo(self, t):
-        print(self.o(t))
+    def oo(self, t, sort=True):
+        print(self.o(t, sort))
         return t

@@ -1,5 +1,7 @@
 from code.PrettyPrint import PrettyPrint
 from code.Data import Data
+from pprint import pp
+from code.Num import Num
 
 """
 Class to test data methods in the package.
@@ -17,8 +19,8 @@ class TestData(object):
                     obj[key] = value
             pretty_print = PrettyPrint()
             pretty_print.oo(obj)
-
         return True
+
 
     """
     Method to print some stats on columns
