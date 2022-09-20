@@ -38,7 +38,7 @@ class TestPrettyPrint(object):
     Method to test oo with complex json.
     """
     def test_oo(self):
-        self.the = ["james", {"test": {"sholay": "bond"}}, {"again": "crap"}]
+        self.the = [{"dump": "flase"}, {"eg": "ALL"},{"file":"../data/auto93.csv"},{"help":"true"},{"nums":"512"},{"seed":"10019"},{"seperator":","}]
         prettyPrint = PrettyPrint()
         result = prettyPrint.oo(self.the)
-        return result == ["james", {"test": {"sholay": "bond"}}, {"again": "crap"}]
+        return result == [{"dump": "flase"}, {"eg": "ALL"},{"file":"../data/auto93.csv"},{"help":"true"},{"nums":"512"},{"seed":"10019"},{"seperator":","}]
