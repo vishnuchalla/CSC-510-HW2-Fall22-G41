@@ -19,3 +19,5 @@ jobs:
         run: |
           pip install coverage
           coverage run test/Framework.py "-e" "ALL" "-f" "./data/auto93.csv" "-n" "512"
+      - name: Upload Coverage to Codecov
+        uses: codecov/codecov-action@v2
