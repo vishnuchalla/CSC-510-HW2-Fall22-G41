@@ -1,6 +1,6 @@
-from .Num import Num
-from .Sym import Sym
-from .Utils import Utils
+from code.Num import Num
+from code.Sym import Sym
+from code.Utils import Utils
 
 
 class Cols:
