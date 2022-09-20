@@ -16,18 +16,18 @@ class Num:
         self.lo = math.inf  # lowest seen
         self.hi = -math.inf  # highest seen
         self.isSorted = True  # No updates since last sort of data
-        self.w = (s.find('-$') + 1 and -1 or 1)
+        self.w = -1 if (s.endswith("-")) else 1
 
     # Return the `p`-th thing from the sorted list `t`. - Move this to utility function afterwards
-    def per(self, t, p):
-        p = math.floor(((p or 0.5) * len(t)) + 0.5)
-
-        return t[max(1, min(len(t), p))]
+    def per(self, t, p=None):
+        value = p if(p) else 0.5
+        p = math.floor((value * len(t)) + 0.5)
+        return list(t.items())[max(1, min(len(t), p)) - 1][1]
 
     # Return kept numbers, sorted
     def nums(self):
         if not self.isSorted:
-            self._has = collections.OrderedDict(sorted(self._has.items()))
+            self._has = collections.OrderedDict(sorted(self._has.items(), key=lambda x: x[1]))
             self.isSorted = True
 
         return self._has
@@ -39,7 +39,6 @@ class Num:
             self.n = self.n + 1
             self.lo = min(v, self.lo)
             self.hi = max(v, self.hi)
-
             if len(self._has) < self.config['nums']:
                 pos = 1 + len(self._has)
 

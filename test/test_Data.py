@@ -1,5 +1,7 @@
 from code.PrettyPrint import PrettyPrint
 from code.Data import Data
+from pprint import pp
+from code.Num import Num
 
 """
 Class to test data methods in the package.
@@ -13,9 +15,13 @@ class TestData(object):
         # Needs to be revisited once the csv is read properly
         for col in d.cols.y.values():
             pretty_print = PrettyPrint()
-            pretty_print.oo(col)
+            if(type(col) == Num):
+                print("at=" + str(col.at), "hi=" + str(col.hi), "isSorted=" + str(col.isSorted), "lo=" + str(col.lo), 
+                "n=" + str(col.n), "name=" + str(col.name), "w=" + str(col.w), sep=" ")
+            # pretty_print.oo(col)
 
         return True
+
 
     """
     Method to print some stats on columns

@@ -44,6 +44,3 @@ class TestSym(object):
         entropy = ((1000 * entropy) // 1) / 1000
         print(mode,entropy)
         return mode == 'a' and 1.38 >= entropy >= 1.37
-
-
-

@@ -11,8 +11,8 @@ class TestNum(object):
     """
     def test_per(self):
         num = Num()
-        result = num.per([1,2,3,4,5], 0.5)
-        return result == 4
+        result = num.per({1:1, 2:2, 3:3, 4:4, 5:5}, 0.5)
+        return result == 3
 
     """
     Method to test the nums method with sorted flag set to False.
