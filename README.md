@@ -134,9 +134,13 @@ ydiv	{:Acc+ 2.713 :Lbs- 887.209 :Mpg+ 7.752}
 ```
 git clone https://github.com/vishnuchalla/CSC-510-HW2-Fall22-G41.git
 ```
-<br/> Run the following command to test the test cases.
+<br/> Install the required packages.
 ```
-crontab -l
+pip install -r requirements.txt
+```
+<br/> Run the following command to run the test cases.
+```
+python3 test/Framework.py
 ```
 
 
