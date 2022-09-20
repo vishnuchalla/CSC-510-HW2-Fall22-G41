@@ -18,4 +18,4 @@ jobs:
       - name: Generate Report
         run: |
           pip install coverage
-          coverage run test/Framework.py
+          coverage run test/Framework.py "-e" "ALL" "-f" "./data/auto93.csv" "-n" "512"
