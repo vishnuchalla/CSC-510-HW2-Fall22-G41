@@ -1,10 +1,19 @@
+from code.PrettyPrint import PrettyPrint
 from code.Sym import Sym
+import Framework
 
 """
 Class to test Sym.
 """
 
 class TestSym(object):
+
+    """
+    Init method to get the command line args.
+    """
+    def __init__(self):
+        self.the = Framework.updated_the
+
     """
     Method to test add method.
     """
@@ -42,8 +51,5 @@ class TestSym(object):
             sym.add(i)
         mode, entropy = sym.mid(None, None, None), sym.div(0, None)
         entropy = ((1000 * entropy) // 1) / 1000
-        print(mode,entropy)
+        PrettyPrint().oo({'mid': mode,'div': entropy})
         return mode == 'a' and 1.38 >= entropy >= 1.37
-
-
-
