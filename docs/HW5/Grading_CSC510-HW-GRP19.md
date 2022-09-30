@@ -4,9 +4,9 @@ Score:
 
 |Rubrics|Score|Evidence|
 |-----|---------|---------|
-|Video1| 3 | Not applicable for HW  | 
-|Video2| 3 | Not applicable for HW | 
-|Workload is spread over the whole team (one team member is often Xtimes more productive than the others, but nevertheless, here is a track record that everyone is contributing a lot)| 2 | From GH insights |
+|Video1| 0 | Not applicable for HW  | 
+|Video2| 0 | Not applicable for HW | 
+|Workload is spread over the whole team (one team member is often Xtimes more productive than the others, but nevertheless, here is a track record that everyone is contributing a lot)| 3 | From GH insights |
 |Number of commits| 2 | From GH insights |
 |Number of commits: by different people| 2 | From GH insights |
 |Issues reports: there are **many**| 0 | No issues opened/closed |
