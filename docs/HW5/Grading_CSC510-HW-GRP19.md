@@ -1,6 +1,9 @@
-# CSC510-HW-GRP19
+# CSC510-HW-GRP19 
 
-Score: 
+## Repo Link
+https://github.com/aadiltajani/CSC510-HW-GRP19
+
+Score: 38
 
 |Rubrics|Score|Evidence|
 |-----|---------|---------|
