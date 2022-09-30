@@ -7,9 +7,9 @@ It verifies the statistical functionality that is performed on the test file for
 
 To run all the test cases : 
 
+=======
 ```
 python3 test/Framework.py "-e" "ALL" "-f" "./data/auto93.csv" "-n" "512"
 ```
-
 
 
