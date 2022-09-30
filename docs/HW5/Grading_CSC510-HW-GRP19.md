@@ -3,7 +3,7 @@
 ## Repo Link
 https://github.com/aadiltajani/CSC510-HW-GRP19
 
-Score: 38
+### Total Score: 38
 
 |Rubrics|Score|Evidence|
 |-----|---------|---------|
