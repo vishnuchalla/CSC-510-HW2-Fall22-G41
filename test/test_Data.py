@@ -1,15 +1,24 @@
 from code.PrettyPrint import PrettyPrint
 from code.Data import Data
+from code.Num import Num
+import Framework
 
 """
 Class to test data methods in the package.
 """
 class TestData(object):
+
+    """
+    Init method to get the command line args.
+    """
+    def __init__(self):
+        self.the = Framework.updated_the
+
     """
     Method to load csv file into a Data
     """
     def test_data(self):
-        d = Data('./data/auto93.csv')
+        d = Data(self.the['file'], self.the['seperator'])
         for col in d.cols.y.values():
             obj = {}
             for key, value in col.__dict__.items():
@@ -17,14 +26,14 @@ class TestData(object):
                     obj[key] = value
             pretty_print = PrettyPrint()
             pretty_print.oo(obj)
-
         return True
+
 
     """
     Method to print some stats on columns
     """
     def test_stats(self):
-        data = Data('data/auto93.csv')
+        data = Data(self.the['file'], self.the['seperator'])
 
         def div(col):
             return col.div()

@@ -1,11 +1,18 @@
 from code.PrettyPrint import PrettyPrint
 from code.Csv import Csv
 from code.Utils import Utils
+import Framework
 
 """
 Class to test Csv methods in the package.
 """
 class TestCsv(object):
+    
+    """
+    Init method to get the command line args.
+    """
+    def __init__(self):
+        self.the = Framework.updated_the
         
     """
     Method to test csv functionality.
@@ -25,5 +32,5 @@ class TestCsv(object):
     """
     def test_csv(self):
         csv = Csv()
-        csv.csv("./data/auto93.csv", Utils().log)
+        csv.csv(self.the['file'], self.the['seperator'], Utils().log)
         return True

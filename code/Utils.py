@@ -1,7 +1,6 @@
 import copy
 import math
-import re
-from .PrettyPrint import PrettyPrint
+from code.PrettyPrint import PrettyPrint
 
 class Row:
     def __init__(self, t):
@@ -65,4 +64,4 @@ class Utils:
         if(self.n > 10):
             return
         else:
-            PrettyPrint().oo(row)
+            PrettyPrint().oo(row, sort=False)
