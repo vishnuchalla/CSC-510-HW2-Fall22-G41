@@ -23,14 +23,14 @@ Score:
 |Use of syntax checkers. | 0 | None |
 |Use of code coverage | 0 | None |
 |Other automated analysis tools| 0 | None |
-|Test cases exist| 3 | 10 test cases exist |
-|Test cases are routinely executed| 3 | Executed for each hw |
-|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3 | Steps to contribute explained |
-|Issues are discussed before they are closed| 0 | No issues opened |
+|Test cases exist| 3 | 7 exists |
+|Test cases are routinely executed| 3 | 7 Executed for each hw |
+|The files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 0 | No explanation found |
+|Issues are discussed before they are closed| 0 | None issues opened |
 |Chat channel: exists| 0 | No discussions visible |
-|Test cases: a large proportion of the issues related to handling failing cases.|  |  |
-|Evidence that the whole team is using the same tools: everyone can get to all tools and files|  | 
-|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)|  | 
-|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)|  | 
-|Evidence that the members of the team are working across multiple places in the code base|  | 
-|Short release cycles |  |  |
+|Test cases: a large proportion of the issues related to handling failing cases.| 1 | Very few |
+|Evidence that the whole team is using the same tools: everyone can get to all tools and files| 3 | 
+|Evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)| 3 | 
+|Evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)| 3 | 
+|Evidence that the members of the team are working across multiple places in the code base| 2 | 
+|Short release cycles | 2 |  |
