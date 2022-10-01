@@ -181,7 +181,7 @@ python3 test/Framework.py
 
 ### Document Generated 
 
-To have a better understanding of the code, please click on the [link](https://sumanthbsundar.github.io/test_doc/) provided below.
+To have a better understanding of the code, please click on the [link](https://sumanthbsundar.github.io/code_doc/) provided below.
 
 Github Pages : [link](https://sumanthbsundar.github.io/code_doc/)
 
