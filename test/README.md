@@ -12,4 +12,10 @@ To run all the test cases :
 python3 test/Framework.py "-e" "ALL" "-f" "./data/auto93.csv" "-n" "512"
 ```
 
+##Document Generated
+
+To have a better understanding of the code, please click on the [link](https://sumanthbsundar.github.io/test_doc/) provided below.
+
+Github Pages : [link](https://sumanthbsundar.github.io/test_doc/)
+
 
