@@ -183,7 +183,7 @@ python3 test/Framework.py
 
 To have a better understanding of the code, please click on the [link](https://sumanthbsundar.github.io/test_doc/) provided below.
 
-Github Pages : https://sumanthbsundar.github.io/test_doc/
+Github Pages : [link](https://sumanthbsundar.github.io/code_doc/)
 
 
 ### Group 41
