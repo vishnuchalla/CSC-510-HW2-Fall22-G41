@@ -179,6 +179,12 @@ pip install -r requirements.txt
 python3 test/Framework.py
 ```
 
+### Document Generated 
+
+To have a better understanding of the code, please click on the [link](https://sumanthbsundar.github.io/test_doc/) provided below.
+
+Github Pages : https://sumanthbsundar.github.io/test_doc/
+
 
 ### Group 41
 1. Vishnu Challa (vchalla2)
